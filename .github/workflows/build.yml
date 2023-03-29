@@ -1,0 +1,18 @@
+name: build
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: 'stable'
+      - name: Run tests
+        run: go test -cover ./...
+      - name: Run tests for pathfinddemo
+        working-directory: cmd/pathfinddemo
+        run: go test -cover ./...

@@ -1,0 +1,9 @@
+github.com/fzipp/astar v0.2.0 h1:vEmeszAm62kB02Qh/oXQNrVR8p6G00WAJIkVRJYzekc=
+github.com/fzipp/astar v0.2.0/go.mod h1:1zYE8kcTMuS0g+b9Vh9lfR7t0MleOH6EneyA3esiLEc=
+github.com/fzipp/canvas v0.3.0 h1:EinFUSrg+ykfB7zGVDggU07RL9MHpzQlrNjaqQHZJB4=
+github.com/fzipp/canvas v0.3.0/go.mod h1:f8a8wUFBxEBcZkyAdDdVxwwhiIODnGAlHKu3DE6SH8c=
+github.com/fzipp/geom v1.0.0 h1:QhTKV8gNOBdyCNE8hlv4UKmUNYtxzds/Z392LwH4uQw=
+github.com/fzipp/geom v1.0.0/go.mod h1:gdaEjeI2z7tzxsrDwK86/4qZF3dbkoEhuGY+NCJLV6M=
+github.com/gorilla/websocket v1.4.2/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
+github.com/gorilla/websocket v1.5.0 h1:PPwGk2jz7EePpoHN/+ClbZu8SPxiqlu12wZP/3sWmnc=
+github.com/gorilla/websocket v1.5.0/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
