@@ -31,6 +31,13 @@ type Pathfinder struct {
 // A polygon is represented by a slice of points, i.e. []image.Point, describing
 // the vertices of the polygon. Thus [][]image.Point is a slice of polygons,
 // i.e. the set of polygons.
+//
+// Each polygon in the polygon set designates either an area that is accessible
+// for path finding or a hole inside such an area, i.e. an obstacle. Nested
+// polygons alternate between accessible area and inaccessible hole:
+//   - Polygons at the first level are area polygons.
+//   - Polygons contained inside an area polygon are holes.
+//   - Polygons contained inside a hole are area polygons again.
 func NewPathfinder(polygons [][]image.Point) *Pathfinder {
 	polygonSet := convert(polygons, func(ps []image.Point) poly.Polygon {
 		return ps2vs(ps)
