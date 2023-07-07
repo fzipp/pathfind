@@ -52,17 +52,18 @@ func main() {
 	url := httpLink(*http)
 	startBrowser(url)
 	fmt.Println("Serving demo at " + url)
-	err := canvas.ListenAndServe(*http, run,
-		canvas.Size(800, 600),
-		canvas.ScaleFullPage(false, true),
-		canvas.Title("Path finding demo"),
-		canvas.EnableEvents(
+	err := canvas.ListenAndServe(*http, run, &canvas.Options{
+		Title:             "Path finding demo",
+		Width:             800,
+		Height:            600,
+		ScaleToPageHeight: true,
+		EnabledEvents: []canvas.Event{
 			canvas.MouseDownEvent{},
 			canvas.KeyDownEvent{},
 			canvas.MouseMoveEvent{},
-		),
-		canvas.Reconnect(time.Second),
-	)
+		},
+		ReconnectInterval: time.Second,
+	})
 	if err != nil {
 		log.Fatal(err)
 	}
