@@ -48,7 +48,7 @@ func drawGraph(ctx *canvas.Context, g map[image.Point][]image.Point) {
 }
 
 func drawPath(ctx *canvas.Context, path []image.Point) {
-	for i := 0; i < len(path)-1; i++ {
+	for i := range len(path) - 1 {
 		drawLine(ctx, path[i], path[i+1])
 	}
 }
