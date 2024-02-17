@@ -1,6 +1,6 @@
 module github.com/fzipp/pathfind/cmd/pathfinddemo
 
-go 1.20
+go 1.22.0
 
 require (
 	github.com/fzipp/canvas v0.4.0
