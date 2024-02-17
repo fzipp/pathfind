@@ -10,5 +10,6 @@ require (
 require (
 	github.com/fzipp/astar v0.2.0 // indirect
 	github.com/fzipp/geom v1.0.0 // indirect
-	github.com/gorilla/websocket v1.5.0 // indirect
+	github.com/gorilla/websocket v1.5.1 // indirect
+	golang.org/x/net v0.21.0 // indirect
 )
